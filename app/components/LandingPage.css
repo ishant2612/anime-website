@@ -1,0 +1,80 @@
+.wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: #111827;
+}
+
+.main{
+    height: 200vh;
+    width: 100%;
+}
+.intro-top{
+    height: 90vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.intro{
+    width: 55%;
+    padding: 0 5vw;
+    & h1{
+        font-size: 2.5rem;
+    }
+    & p{
+        font-size: 0.9rem;
+        color:#c4c4c4;
+        width: 90%;
+    }
+
+}
+
+.top-cards{
+    width: 45%;
+    height: 90vh;
+    padding: 2vh 1vw;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.social{
+    width: 100vw;
+    height: 10vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 5%;
+}
+
+@media only screen and (max-width: 412px){
+    .intro-top{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        /* background-color: red; */
+        padding: 0;
+    }
+
+    .intro-top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: red;
+        
+    }
+
+    .intro > h1{
+        font-size: 1.5rem;
+        width: 100vw;
+        margin-left: -28vw;
+        text-align: center;
+    }
+}
